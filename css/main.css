@@ -1,1 +1,262 @@
-/* Your stylesheet goes here */
+/* base page style */
+body {
+	font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 300;
+	background-color: #E9EAEE !important;
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Raleway, 'Helvetica Neue', Helvetica, sans-serif !important;
+}
+
+h2 {
+	color: #BC6026;
+}
+
+svg {
+	height: 1em;
+	fill: #D87E28;
+}
+
+#logo {
+	fill: #ffffff;
+}
+
+#logo:hover {
+	fill: #D87E28;
+}
+
+/* nav items */
+nav {
+	position: fixed;
+	font-size: 16px;
+	padding-left: 15px;
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+nav ul li {
+	display: inline;
+	list-style-type: none;
+}
+
+nav ul li a {
+	font-variant: small-caps;
+	color: #ffffff;
+}
+
+nav ul {
+	padding-left: 0px;
+	margin-bottom: 0px; 
+}
+
+nav li a:hover {
+	text-decoration: none;
+	color: #D87E28;
+}
+
+/* other styles */
+#top-header {
+	padding-top: 3em;
+}
+
+#headline {
+	font-style: italic;
+}
+
+#motto, #coffee {
+	display: none;
+}
+
+#cafeinfo svg {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	height: 1.5em;
+	margin-bottom: 1em;
+}
+
+#cafeinfo {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#greysection {
+	background-color: #DBDCE3;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+#location img {
+	border-radius: 5px !important;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+dd {
+	padding-left: 1em;
+	font-style: italic;
+}
+
+#menu {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#menu h2, #ourstory h2 {
+	color: #D87E28
+}
+
+#ourstory img {
+	float: right;
+	align: right;
+	max-height: 300px;
+	margin-left: 1em;
+	border-radius: 5px;
+	display: inline;
+}
+
+#ourstory p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#ourstory {
+	padding-bottom: 30px;
+}
+
+#anothergrey {
+	background-color: #DBDCE3; 
+}
+
+footer {
+	border-top: 3px solid #D87E28;
+	background-color: #afb3c2;
+	font-size: 12px;
+}
+
+footer.clear {
+	clear: both;
+}
+
+#content {
+	padding-top: 1em;
+}
+
+#secondcol {
+	text-align: right;
+}
+
+#comingsoon {
+	height: 80px;
+	font-size: 18px;
+	padding-top: 30px;
+}
+
+/* 768 and wider */
+@media (min-width: 768px) {
+	body {
+	    font-size: 20px;
+	}
+
+    h2 {
+	  	text-align: center;
+	  	margin-bottom: 1em;
+    }
+
+	nav {
+		background-color:rgba(24, 28, 34, 0.8);
+	}
+
+	nav ul li a {
+		padding-left: 1em;
+		padding-right: 1em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+
+	#top-header {
+		background-repeat: no-repeat;
+		color: #ffffff;
+		text-align: right;
+		width: 100% !important;
+	}
+
+	#title, #motto {
+		margin-right: 40px;
+	}
+	
+	#title {
+		font-size: 60px;
+	}
+
+	#motto, #coffee {
+		display: inline;
+	}
+
+	#coffee {
+		height: 1.5em;
+		margin-bottom: 1em;
+		fill: #D87E28;
+	}
+
+	#headline {
+		font-size: 1.25em;
+		text-align: center;
+		margin-top: 3em; 
+		margin-bottom: 3em; 
+	}
+}
+
+/* 769 pixels or more... */
+@media (min-width: 769) {
+	#ourstory img {
+		max-height: 400px;
+	}
+}
+
+/* under 768 */
+@media (max-width: 767px) {
+	nav {
+		background-color: #181C22;
+	}
+
+	nav ul li a {
+		padding: 0.5em;
+	}
+}
+
+/* small size background */
+@media (min-width: 768px) and (max-width: 991px) {
+	#top-header {
+		background-image: url("../img/background-sm.jpg");
+		min-height: 550px;
+	}
+}
+
+/* med size background */
+@media (min-width: 992px) and (max-width: 1199px) {
+	#top-header {
+		background-image: url("../img/background-md.jpg");
+		padding-top: 4em;
+		min-height: 670px;
+	}
+}
+
+/* lg size background */
+@media (min-width: 1200px) {
+	#top-header {
+		background-image: url("../img/background-lg.jpg");
+		padding-top: 4em;
+		min-height: 775px;
+	}
+}
